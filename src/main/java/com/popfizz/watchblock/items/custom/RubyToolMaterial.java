@@ -1,11 +1,10 @@
 package com.popfizz.watchblock.items.custom;
 
-import net.minecraft.item.Items;
+import com.popfizz.watchblock.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
 public class RubyToolMaterial implements ToolMaterial {
-
     public static final RubyToolMaterial INSTANCE = new RubyToolMaterial();
 
     @Override
@@ -35,6 +34,6 @@ public class RubyToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.POTATO);
+        return Ingredient.ofItems(ModItems.RUBY);
     }
 }

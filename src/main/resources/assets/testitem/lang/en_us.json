@@ -3,6 +3,7 @@
   "item.testitem.ruby": "Ruby",
   "block.testitem.ruby_block": "Ruby Block",
   "item.testitem.ruby_sword": "Ruby Sword",
-  "block.testitem.deepslate_ruby_ore": "Deepslate Ruby Ore"
+  "block.testitem.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "item.testitem.dense_ruby": "Dense Ruby"
 
 }
