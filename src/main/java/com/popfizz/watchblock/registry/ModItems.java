@@ -3,7 +3,7 @@ package com.popfizz.watchblock.registry;
 import com.popfizz.watchblock.WatchBlock;
 import com.popfizz.watchblock.items.custom.EightBallItem;
 import com.popfizz.watchblock.items.custom.ModItemGroup;
-import com.popfizz.watchblock.items.custom.RubyToolMaterial;
+import com.popfizz.watchblock.items.custom.tools.RubyToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -18,7 +18,7 @@ public class ModItems {
 
     public static final Item DENSE_RUBY = new Item(new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.UNCOMMON));
 
-    public static ToolItem RUBY_SWORD = new SwordItem(RubyToolMaterial.INSTANCE, 60, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static ToolItem RUBY_SWORD = new SwordItem(RubyToolMaterial.INSTANCE, 5, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
    public static final Item EIGHT_BALL = new EightBallItem(new FabricItemSettings().group(ModItemGroup.Danny_davito).maxCount(1).rarity(Rarity.EPIC));
 
     //Block Items

@@ -1,4 +1,4 @@
-package com.popfizz.watchblock.items.custom;
+package com.popfizz.watchblock.items.custom.tools;
 
 import com.popfizz.watchblock.registry.ModItems;
 import net.minecraft.item.ToolMaterial;
@@ -9,7 +9,7 @@ public class RubyToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 500;
+        return 700;
     }
 
     @Override
