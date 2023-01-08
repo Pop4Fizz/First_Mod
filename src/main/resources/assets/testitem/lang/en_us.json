@@ -4,6 +4,10 @@
   "block.testitem.ruby_block": "Ruby Block",
   "item.testitem.ruby_sword": "Ruby Sword",
   "block.testitem.deepslate_ruby_ore": "Deepslate Ruby Ore",
-  "item.testitem.dense_ruby": "Dense Ruby"
+  "item.testitem.dense_ruby": "Dense Ruby",
+  "item.testitem.ruby_helmet": "Ruby Plated Netherite Helmet",
+  "item.testitem.ruby_chestplate": "Ruby Plated Netherite Chestplate",
+  "item.testitem.ruby_leggings": "Ruby Plated Netherite Leggings",
+  "item.testitem.ruby_boots": "Ruby Plated Netherite Boots"
 
 }

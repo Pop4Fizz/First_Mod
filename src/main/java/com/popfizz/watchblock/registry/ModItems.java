@@ -3,8 +3,10 @@ package com.popfizz.watchblock.registry;
 import com.popfizz.watchblock.WatchBlock;
 import com.popfizz.watchblock.items.custom.EightBallItem;
 import com.popfizz.watchblock.items.custom.ModItemGroup;
+import com.popfizz.watchblock.items.custom.armor.CustomArmorMaterial;
 import com.popfizz.watchblock.items.custom.tools.RubyToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -26,14 +28,21 @@ public class ModItems {
 
     public static final BlockItem DEEPSLATE_RUBY_ORE = new BlockItem(Modblocks.DEEPSLATE_RUBY_ORE, new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.COMMON));
 
-    public static void registerItems() {
-            Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby"), RUBY);
-            Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_block"), RUBY_BLOCK);
-            Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "eight_ball"), EIGHT_BALL);
-            Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_sword"), RUBY_SWORD);
-            Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "deepslate_ruby_ore"), DEEPSLATE_RUBY_ORE);
-            Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "dense_ruby"), DENSE_RUBY);
 
+    //Armor Items
+
+    
+
+    //Weapon Items
+
+
+    public static void registerItems() {
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby"), RUBY);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_block"), RUBY_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "eight_ball"), EIGHT_BALL);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_sword"), RUBY_SWORD);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "deepslate_ruby_ore"), DEEPSLATE_RUBY_ORE);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "dense_ruby"), DENSE_RUBY);
 
     }
 }
