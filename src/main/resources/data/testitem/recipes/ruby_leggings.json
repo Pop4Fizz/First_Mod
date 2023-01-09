@@ -2,21 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:stick"
+      "item": "testitem:ruby"
     },
     "X": {
       "item": "testitem:dense_ruby"
-    },
-    "F": {
-      "item": "testitem:ruby"
     }
   },
   "pattern": [
-    "  X",
-    "FX ",
-    "#F "
+    "XXX",
+    "X X",
+    "# #"
   ],
   "result": {
-    "item": "testitem:ruby_sword"
+    "item": "testitem:ruby_leggings"
   }
 }

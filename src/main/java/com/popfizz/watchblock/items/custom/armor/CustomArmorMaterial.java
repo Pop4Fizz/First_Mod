@@ -10,11 +10,11 @@ import net.minecraft.sound.SoundEvents;
 
 public class CustomArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
-    private static final int[] PROTECTION_VALUES = new int[] {3, 5, 6, 4};
-
+    private static final int[] PROTECTION_VALUES = new int[] {3, 5, 6, 3};
+                                                    //{feet, legs, chest, helm}
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 40;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 23;
     }
 
     @Override
@@ -29,7 +29,7 @@ public class CustomArmorMaterial implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE;
+        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
     }
 
     @Override
@@ -44,12 +44,12 @@ public class CustomArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 3.2F;
+        return 1.2F;
     }
 
     @Override
     public float getKnockbackResistance() {
-        return 0.12F;
+        return 0.05F;
     }
 }
 

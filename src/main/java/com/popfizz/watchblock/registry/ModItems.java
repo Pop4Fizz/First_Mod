@@ -20,7 +20,7 @@ public class ModItems {
 
     public static final Item DENSE_RUBY = new Item(new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.UNCOMMON));
 
-    public static ToolItem RUBY_SWORD = new SwordItem(RubyToolMaterial.INSTANCE, 5, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static ToolItem RUBY_SWORD = new SwordItem(RubyToolMaterial.INSTANCE, 3, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
    public static final Item EIGHT_BALL = new EightBallItem(new FabricItemSettings().group(ModItemGroup.Danny_davito).maxCount(1).rarity(Rarity.EPIC));
 
     //Block Items

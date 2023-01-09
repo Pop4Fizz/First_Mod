@@ -14,16 +14,16 @@ public class CustomMaterial {
 
 
     public static final ArmorMaterial Custom_ARMOR_METERIAL = new CustomArmorMaterial();
-    public static final Item RUBY_NETH_HELMET = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ModItemGroup.Danny_davito));
-    public static final Item RUBY_NETH_CHESTPLATE = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ModItemGroup.Danny_davito));
-    public static final Item RUBY_NETH_LEGGINGS = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ModItemGroup.Danny_davito));
-    public static final Item RUBY_NETH_BOOTS = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.FEET, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_HELMET = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_CHESTPLATE = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_LEGGINGS = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_BOOTS = new ArmorItem(Custom_ARMOR_METERIAL, EquipmentSlot.FEET, new Item.Settings().group(ModItemGroup.Danny_davito));
 
     public static void registerItems() {
-        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_helmet"), RUBY_NETH_HELMET);
-        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_chestplate"), RUBY_NETH_CHESTPLATE);
-        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_leggings"), RUBY_NETH_LEGGINGS);
-        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_boots"), RUBY_NETH_BOOTS);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_helmet"), RUBY_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_chestplate"), RUBY_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_leggings"), RUBY_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_boots"), RUBY_BOOTS);
 
     }
 }
