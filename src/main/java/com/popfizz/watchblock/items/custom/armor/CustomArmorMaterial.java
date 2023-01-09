@@ -13,7 +13,7 @@ public class CustomArmorMaterial implements ArmorMaterial {
                                                     //{feet, legs, chest, helm}
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 23;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 35;
     }
 
     @Override
