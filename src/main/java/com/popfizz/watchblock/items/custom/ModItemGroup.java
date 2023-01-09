@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static final ItemGroup Danny_davito = FabricItemGroupBuilder.build(new Identifier(WatchBlock.MOD_ID,"danny"), () -> new ItemStack(ModItems.RUBY_BLOCK));
+    public static final ItemGroup Danny_davito = FabricItemGroupBuilder.build(
+            new Identifier(WatchBlock.MOD_ID,"danny"), () -> new ItemStack(ModItems.RUBY_BLOCK));
 
 }

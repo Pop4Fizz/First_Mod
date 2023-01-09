@@ -12,5 +12,7 @@
   "item.testitem.ruby_pickaxe": "Ruby Pickaxe",
   "item.testitem.ruby_axe": "Ruby Axe",
   "item.testitem.ruby_shovel": "Ruby Shovel",
-  "item.testitem.ruby_hoe": "Ruby Hoe"
+  "item.testitem.ruby_hoe": "Ruby Hoe",
+
+  "itemGroup.testitem.danny": "Ruby"
 }
