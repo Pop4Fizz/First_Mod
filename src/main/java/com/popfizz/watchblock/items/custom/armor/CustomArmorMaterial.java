@@ -3,7 +3,6 @@ package com.popfizz.watchblock.items.custom.armor;
 import com.popfizz.watchblock.registry.ModItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Item;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -44,7 +43,7 @@ public class CustomArmorMaterial implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 1.2F;
+        return 1.8F;
     }
 
     @Override
