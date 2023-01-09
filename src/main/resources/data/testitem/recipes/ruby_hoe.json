@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "testitem:dense_ruby"
+    },
+    "F": {
+      "item": "testitem:ruby"
+    }
+  },
+  "pattern": [
+    "FX ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "testitem:ruby_hoe"
+  }
+}

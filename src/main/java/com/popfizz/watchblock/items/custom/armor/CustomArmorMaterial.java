@@ -51,6 +51,7 @@ public class CustomArmorMaterial implements ArmorMaterial {
     public float getKnockbackResistance() {
         return 0.05F;
     }
+
 }
 
 

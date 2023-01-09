@@ -13,7 +13,7 @@ public static final List<OreFeatureConfig.Target> OVERWORLD_DEEPSLATE_RUBY_ORES 
 );
 
 public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> DEEPSLATE_RUBY_ORE =
-        ConfiguredFeatures.register("deepslate_ruby_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_DEEPSLATE_RUBY_ORES, 6));
+        ConfiguredFeatures.register("deepslate_ruby_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_DEEPSLATE_RUBY_ORES, 8));
 
     public static void registerConfiguredFeatures() {
         WatchBlock.LOGGER.debug("Registering the ModConfiguredFeatures for " + WatchBlock.MOD_ID);

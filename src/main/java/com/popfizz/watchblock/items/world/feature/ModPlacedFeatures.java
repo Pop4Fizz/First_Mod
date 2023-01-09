@@ -11,7 +11,7 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryEntry<PlacedFeature> DEEPSLATE_RUBY_ORE_PLACED = PlacedFeatures.register("deepslate_ruby_ore_placed",
-            ModConfiguredFeatures.DEEPSLATE_RUBY_ORE, modifiersWithCount(6,
+            ModConfiguredFeatures.DEEPSLATE_RUBY_ORE, modifiersWithCount(4,
                     HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(0))));
 
 

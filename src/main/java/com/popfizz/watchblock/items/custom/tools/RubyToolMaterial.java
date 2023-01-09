@@ -1,6 +1,8 @@
 package com.popfizz.watchblock.items.custom.tools;
 
 import com.popfizz.watchblock.registry.ModItems;
+import net.minecraft.item.HoeItem;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -9,17 +11,17 @@ public class RubyToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 700;
+        return 1782;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 5.0f;
+        return 5f;
     }
 
     @Override
     public float getAttackDamage() {
-        return 3.0f;
+        return -1.0f;
     }
 
     @Override
@@ -36,4 +38,10 @@ public class RubyToolMaterial implements ToolMaterial {
     public Ingredient getRepairIngredient() {
         return Ingredient.ofItems(ModItems.RUBY);
     }
+    public static class CustomHoeItem extends HoeItem {
+        public CustomHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+            super(material, attackDamage, attackSpeed, settings);
+        }
+    }
 }
+
