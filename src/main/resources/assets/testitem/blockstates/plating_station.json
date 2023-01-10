@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "testitem:block/plating_station"
+    },
+    "facing=south": {
+      "model": "testitem:block/plating_station",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "testitem:block/plating_station",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "testitem:block/plating_station",
+      "y": 90
+    }
+  }
+}
+
+
+

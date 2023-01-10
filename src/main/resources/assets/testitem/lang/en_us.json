@@ -1,9 +1,17 @@
 {
+
+  "block.testitem.ruby_block": "Ruby Block",
+  "block.testitem.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.testitem.plating_station": "Plating Station",
+
+
+
+
+
+
+  "item.testitem.ruby_sword": "Ruby Sword",
   "item.testitem.eight_ball": "Eight Ball",
   "item.testitem.ruby": "Ruby",
-  "block.testitem.ruby_block": "Ruby Block",
-  "item.testitem.ruby_sword": "Ruby Sword",
-  "block.testitem.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "item.testitem.dense_ruby": "Dense Ruby",
   "item.testitem.ruby_helmet": "Ruby Helmet",
   "item.testitem.ruby_chestplate": "Ruby Chestplate",
@@ -13,6 +21,18 @@
   "item.testitem.ruby_axe": "Ruby Axe",
   "item.testitem.ruby_shovel": "Ruby Shovel",
   "item.testitem.ruby_hoe": "Ruby Hoe",
+  "item.testitem.emerald_helmet": "Emerald Helmet",
+  "item.testitem.emerald_chestplate": "Emerald Chestplate",
+  "item.testitem.emerald_leggings": "Emerald Leggings",
+  "item.testitem.emerald_boots": "Emerald Boots",
+  "item.testitem.emerald_sword": "Emerald Sword",
+  "item.testitem.emerald_axe": "Emerald Axe",
+  "item.testitem.emerald_pickaxe": "Emerald Pickaxe",
+  "item.testitem.emerald_shovel": "Emerald Shovel",
+  "item.testitem.emerald_hoe": "Emerald Hoe",
+
+
+
 
   "itemGroup.testitem.danny": "Ruby"
 }

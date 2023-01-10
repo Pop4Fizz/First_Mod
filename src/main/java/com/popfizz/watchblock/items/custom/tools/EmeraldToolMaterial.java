@@ -7,12 +7,12 @@ import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class RubyToolMaterial implements ToolMaterial {
-    public static final RubyToolMaterial INSTANCE = new RubyToolMaterial();
+public class EmeraldToolMaterial implements ToolMaterial {
+    public static final EmeraldToolMaterial INSTANCE = new EmeraldToolMaterial();
 
     @Override
     public int getDurability() {
-        return 1782;
+        return 1844;
     }
 
     @Override
@@ -37,10 +37,10 @@ public class RubyToolMaterial implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.RUBY);
+        return Ingredient.ofItems(Items.EMERALD);
     }
-    public static class CustomHoeItem extends HoeItem {
-        public CustomHoeItem(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
+    public static class CustomHoeIten extends HoeItem {
+        public CustomHoeIten(ToolMaterial material, int attackDamage, float attackSpeed, Settings settings) {
             super(material, attackDamage, attackSpeed, settings);
         }
     }
