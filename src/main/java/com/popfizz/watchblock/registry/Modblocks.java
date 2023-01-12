@@ -30,7 +30,8 @@ public class Modblocks {
 public static final Block PLATING_STATION = registerBlock("plating_station",
         new PlatingStationBlock(FabricBlockSettings
                 .of(Material.STONE, MapColor.GRAY)
-                .strength(4f).requiresTool()
+                .strength(4f, 5.0F)
+                .requiresTool()
                 .nonOpaque()));
 
 private static Block registerBlock(String name, Block block) {

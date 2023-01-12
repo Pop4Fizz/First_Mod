@@ -3,12 +3,8 @@ package com.popfizz.watchblock.registry;
 import com.popfizz.watchblock.WatchBlock;
 import com.popfizz.watchblock.items.custom.EightBallItem;
 import com.popfizz.watchblock.items.custom.ModItemGroup;
-import com.popfizz.watchblock.items.custom.tools.EmeraldToolMaterial;
-import com.popfizz.watchblock.items.custom.tools.EmeraldToolMaterial.CustomHoeIten;
-import com.popfizz.watchblock.items.custom.tools.RubyToolMaterial;
-import com.popfizz.watchblock.items.custom.tools.RubyToolMaterial.CustomHoeItem;
+import com.popfizz.watchblock.items.custom.tools.ModToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.block.Block;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -23,30 +19,32 @@ public class ModItems {
     public static final Item DENSE_RUBY = new Item(
             new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.UNCOMMON));
     public static ToolItem RUBY_SWORD = new SwordItem(
-            RubyToolMaterial.INSTANCE, 7, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
+            ModToolMaterial.RUBY, 7, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
    public static final Item EIGHT_BALL = new EightBallItem(
            new FabricItemSettings().group(ModItemGroup.Danny_davito).maxCount(1).rarity(Rarity.EPIC));
    public static final ToolItem RUBY_PICKAXE = new PickaxeItem(
-           RubyToolMaterial.INSTANCE, 5, -2.8F, new Item.Settings().group(ModItemGroup.Danny_davito));
+           ModToolMaterial.RUBY, 5, -2.8F, new Item.Settings().group(ModItemGroup.Danny_davito));
    public static final ToolItem RUBY_AXE = new AxeItem(
-           RubyToolMaterial.INSTANCE, 9, -3.1F, new Item.Settings().group(ModItemGroup.Danny_davito));
+           ModToolMaterial.RUBY, 9, -3.1F, new Item.Settings().group(ModItemGroup.Danny_davito));
    public static final ToolItem RUBY_SHOVEL = new ShovelItem(
-           RubyToolMaterial.INSTANCE, 5.5F, -3F,  new Item.Settings().group(ModItemGroup.Danny_davito));
-   public static final ToolItem RUBY_HOE = new CustomHoeItem(
-           RubyToolMaterial.INSTANCE, 1, -0F, new Item.Settings().group(ModItemGroup.Danny_davito));
+           ModToolMaterial.RUBY, 5.5F, -3F,  new Item.Settings().group(ModItemGroup.Danny_davito));
+   public static final ToolItem RUBY_HOE = new ModToolMaterial.CustomHoeItem(
+           ModToolMaterial.RUBY, 1, -0F, new Item.Settings().group(ModItemGroup.Danny_davito));
+   public static final Item RUBY_PLATING = new Item(
+           new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.RARE));
 
    //Emerald Items
 
     public static final ToolItem EMERALD_SWORD = new SwordItem(
-            EmeraldToolMaterial.INSTANCE, 7, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
+            ModToolMaterial.EMERALD, 7, -2.4F, new Item.Settings().group(ModItemGroup.Danny_davito));
     public static final ToolItem EMERALD_PICKAXE = new PickaxeItem(
-            EmeraldToolMaterial.INSTANCE, 5, -2.8F, new Item.Settings().group(ModItemGroup.Danny_davito));
+            ModToolMaterial.EMERALD, 5, -2.8F, new Item.Settings().group(ModItemGroup.Danny_davito));
     public static final ToolItem EMERALD_AXE = new AxeItem(
-            EmeraldToolMaterial.INSTANCE, 9, -3.1F, new Item.Settings().group(ModItemGroup.Danny_davito));
+            ModToolMaterial.EMERALD, 9, -3.1F, new Item.Settings().group(ModItemGroup.Danny_davito));
     public static final ToolItem EMERALD_SHOVEL = new ShovelItem(
-            EmeraldToolMaterial.INSTANCE, 5.5F, -3F, new Item.Settings().group(ModItemGroup.Danny_davito));
-    public static final ToolItem EMERALD_HOE = new CustomHoeIten(
-            EmeraldToolMaterial.INSTANCE, 1, -0F, new Item.Settings().group(ModItemGroup.Danny_davito));
+            ModToolMaterial.EMERALD, 5.5F, -3F, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final ToolItem EMERALD_HOE = new ModToolMaterial.CustomHoeItem(
+            ModToolMaterial.EMERALD, 1, -0F, new Item.Settings().group(ModItemGroup.Danny_davito));
 
 
    //Block Items
@@ -55,6 +53,7 @@ public class ModItems {
 
     public static final BlockItem DEEPSLATE_RUBY_ORE = new BlockItem(
             Modblocks.DEEPSLATE_RUBY_ORE, new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.COMMON));
+
     public static final BlockItem PLATING_STATION = new BlockItem(
             Modblocks.PLATING_STATION, new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.UNCOMMON).maxCount(1));
 
@@ -82,5 +81,6 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_shovel"), EMERALD_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_hoe"), EMERALD_HOE);
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "plating_station"), PLATING_STATION);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_plating"), RUBY_PLATING);
     }
 }

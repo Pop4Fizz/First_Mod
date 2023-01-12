@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "testitem:ruby"
+    },
+    "#": {
+      "item": "minecraft:emerald"
+    },
+    "F": {
+      "item": "minecraft:iron_block"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "FXF",
+    "R#R",
+    "FRF"
+  ],
+  "result": {
+    "item": "testitem:plating_station"
+  }
+}

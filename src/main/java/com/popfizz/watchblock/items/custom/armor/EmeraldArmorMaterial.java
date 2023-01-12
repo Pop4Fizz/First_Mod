@@ -10,7 +10,7 @@ import net.minecraft.sound.SoundEvents;
 
     public class EmeraldArmorMaterial implements ArmorMaterial {
         private static final int[] BASE_DURABILITY = new int[] {11, 13, 14, 9};
-        private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 4};
+        private static final int[] PROTECTION_VALUES = new int[] {3, 6, 8, 3};
         //{feet, legs, chest, helm}
         @Override
         public int getDurability(EquipmentSlot slot) {

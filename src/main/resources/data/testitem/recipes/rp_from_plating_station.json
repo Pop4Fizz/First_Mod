@@ -1,0 +1,11 @@
+{
+  "type": "testitem:plating",
+  "ingredients": [
+    {
+      "item": "testitem:dense_ruby"
+    }
+  ],
+  "output": {
+    "item": "testitem:ruby_plating"
+  }
+}

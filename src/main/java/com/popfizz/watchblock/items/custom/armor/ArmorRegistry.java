@@ -13,6 +13,7 @@ public class ArmorRegistry {
 
     public static final ArmorMaterial RUBY_ARMOR_METERIAL = new RubyArmorMaterial();
     public static final ArmorMaterial EMERALD_ARMOR_METERIAL = new EmeraldArmorMaterial();
+    public static final ArmorMaterial RUBY_NETH_ARMOR = new RubyPNethArmor();
 
 
     public static final Item RUBY_HELMET = new ArmorItem(
@@ -43,6 +44,18 @@ public class ArmorRegistry {
     );
 
 
+    public static final Item RUBY_NETH_HELMET = new ArmorItem(
+            RUBY_NETH_ARMOR, EquipmentSlot.HEAD, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_NETH_CHESTPLATE = new ArmorItem(
+            RUBY_NETH_ARMOR, EquipmentSlot.CHEST, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_NETH_LEGGINGS = new ArmorItem(
+            RUBY_NETH_ARMOR, EquipmentSlot.LEGS, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item RUBY_NETH_BOOTS = new ArmorItem(
+            RUBY_NETH_ARMOR, EquipmentSlot.FEET, new Item.Settings().group(ModItemGroup.Danny_davito));
+
+
+
+
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_helmet"), RUBY_HELMET);
@@ -54,6 +67,11 @@ public class ArmorRegistry {
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_chestplate"), EMERALD_CHESTPLATE);
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_leggings"), EMERALD_LEGGINGS);
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_boots"), EMERALD_BOOTS);
+
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "rpn_helmet"), RUBY_NETH_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "rpn_chestplate"), RUBY_NETH_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "rpn_leggings"), RUBY_NETH_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "rpn_boots"), RUBY_NETH_BOOTS);
     }
 }
 

@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "PopFizz",
-  "description": "Adds Ruby Armor and tools :D",
+  "description": "Adds Ruby/Emerald Armor and tools :D",
   "authors": [
     "Me!"
   ],
@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "com.popfizz.watchblock.WatchBlock"
+    ],
+    "client": [
+      "com.popfizz.watchblock.WatchBlockClient"
     ]
   },
   "mixins": [
