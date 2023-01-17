@@ -1,0 +1,11 @@
+{
+  "type": "testitem:plating",
+  "ingredients": [
+    {
+      "item": "testitem:dense_emerald"
+    }
+  ],
+  "output": {
+    "item": "testitem:emerald_plating"
+  }
+}

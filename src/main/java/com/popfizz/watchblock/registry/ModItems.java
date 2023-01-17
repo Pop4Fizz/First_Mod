@@ -45,6 +45,10 @@ public class ModItems {
             ModToolMaterial.EMERALD, 5.5F, -3F, new Item.Settings().group(ModItemGroup.Danny_davito));
     public static final ToolItem EMERALD_HOE = new ModToolMaterial.CustomHoeItem(
             ModToolMaterial.EMERALD, 1, -0F, new Item.Settings().group(ModItemGroup.Danny_davito));
+    public static final Item EMERALD_PLATING = new Item(
+            new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.RARE));
+    public static final Item DENSE_EMERALD = new Item(
+            new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.UNCOMMON));
 
 
    //Block Items
@@ -56,6 +60,9 @@ public class ModItems {
 
     public static final BlockItem PLATING_STATION = new BlockItem(
             Modblocks.PLATING_STATION, new FabricItemSettings().group(ModItemGroup.Danny_davito).rarity(Rarity.UNCOMMON).maxCount(1));
+
+
+
 
 
 
@@ -82,5 +89,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_hoe"), EMERALD_HOE);
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "plating_station"), PLATING_STATION);
         Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "ruby_plating"), RUBY_PLATING);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "emerald_plating"), EMERALD_PLATING);
+        Registry.register(Registry.ITEM, new Identifier(WatchBlock.MOD_ID, "dense_emerald"), DENSE_EMERALD);
     }
 }
