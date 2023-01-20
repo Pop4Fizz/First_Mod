@@ -6,9 +6,9 @@
     }
   },
   "pattern": [
-    "## ",
-    "## ",
-    "   "
+    "   ",
+    "###",
+    "###"
   ],
   "result": {
     "item": "testitem:dense_ruby"

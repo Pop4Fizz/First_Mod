@@ -23,7 +23,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 
 public class PlatingStationBlockEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
@@ -122,10 +122,10 @@ public class PlatingStationBlockEntity extends BlockEntity implements NamedScree
 
 
         if(hasRecipe(entity)) {
-            entity.removeStack(1, 1);
+            entity.removeStack(0, 1);
 
-            entity.setStack(2, new ItemStack(recipe.get().getOutput().getItem(),
-                    entity.getStack(2).getCount() + 1));
+            entity.setStack(1, new ItemStack(recipe.get().getOutput().getItem(),
+                    entity.getStack(1).getCount() + 1));
 
             entity.resetProgress();
         }
@@ -145,11 +145,11 @@ public class PlatingStationBlockEntity extends BlockEntity implements NamedScree
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleInventory inventory, Item output) {
-        return inventory.getStack(2).getItem() == output || inventory.getStack(2).isEmpty();
+        return inventory.getStack(1).getItem() == output || inventory.getStack(1).isEmpty();
     }
 
     private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-        return inventory.getStack(2).getMaxCount() > inventory.getStack(2).getCount();
+        return inventory.getStack(1).getMaxCount() > inventory.getStack(1).getCount();
     }
 }
 

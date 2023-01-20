@@ -9,12 +9,12 @@ import net.minecraft.sound.SoundEvents;
 
 public class WSculkArmor implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[]{15, 17, 19, 14};
-    private static final int[] PROTECTION_VALUES = new int[]{3, 6, 8, 3};
+    private static final int[] PROTECTION_VALUES = new int[]{1, 5, 6, 2};
 
     //{feet, legs, chest, helm}
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 48;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 39;
     }
 
     @Override
@@ -44,7 +44,7 @@ public class WSculkArmor implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 4F;
+        return 2.5F;
     }
 
     @Override

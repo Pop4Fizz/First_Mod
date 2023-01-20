@@ -43,6 +43,24 @@
   "item.testitem.epn_helmet": "Emerald Plated Netherite Helmet",
   "item.testitem.emerald_plating": "Emerald Plating",
   "item.testitem.dense_emerald": "Dense Emerald",
+  "item.testitem.ws_helmet": "Warden Sculk Helmet",
+  "item.testitem.ws_chestplate": "Warden Sculk Chestplate",
+  "item.testitem.ws_leggings": "Warden Sculk Leggings",
+  "item.testitem.ws_boots": "Warden Sculk Boots",
+  "item.testitem.wb_helmet": "Withered Bone Helmet",
+  "item.testitem.wb_chestplate": "Withered Bone Chestplate",
+  "item.testitem.wb_leggings": "Withered Bone Leggings",
+  "item.testitem.wb_boots": "Withered Bone Boots",
+  "item.testitem.eds_helmet": "Ender Dragon Helmet",
+  "item.testitem.eds_chestplate": "Ender Dragon Scale Chestplate",
+  "item.testitem.eds_leggings": "Ender Dragon Scale Leggings",
+  "item.testitem.eds_boots": "Ender Dragon Scale Boots",
+  "item.testitem.gh_helmet": "Guardian Hide Helmet",
+  "item.testitem.gh_chestplate": "Guardian Hide Chestplate",
+  "item.testitem.gh_leggings": "Guardian Hide Leggings",
+  "item.testitem.gh_boots": "Guardian Hide Boots",
+
+
 
 
 
